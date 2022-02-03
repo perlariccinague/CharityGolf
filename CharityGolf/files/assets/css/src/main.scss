@@ -72,10 +72,23 @@
   bottom: 2px;
 }
 
-  .date:hover {
-    opacity: .6;
-    filter: contrast(2);
+.date, .description > p {
+  a {
+    transition: color 250ms;
+  }
 }
+
+.description:hover {
+  .date a,> p a {
+    color: $yellow;
+  }
+}
+
+/*.date:hover,.description > p:hover {
+  a {
+    color: $yellow;
+  }
+}*/
 
 .finale-image1{
   img{
@@ -315,10 +328,6 @@
     }
   }
 
-  .description > p {
-    margin: 13px 0;
-  }
-
   .standort p{
     font-size: 21px;
   }
@@ -356,12 +365,18 @@
   }
 
   .description {
-    bottom: 0px;
+    bottom: 0;
     height: 145px;
     font-size: 20px;
   }
-  .date, .desciption > p {
+  .date {
     font-size: 18px;
+    padding: 10px;
+    width: 75%;
+  }
+  .description > p {
+    margin: 10px 0;
+    font-size: 16px;
   }
 
 
