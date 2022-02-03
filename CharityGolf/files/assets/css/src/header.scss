@@ -1,0 +1,48 @@
+@import "variables";
+
+.logo a{
+  text-decoration: none;
+}
+
+.logo .header-titel{
+  color: white;
+  p{
+    bottom: 65%;
+    position: absolute;
+    left: 20%;
+  }
+  h1{
+    margin: 33px -27%;
+    font-size: 28px;
+    font-family: "Open Sans", sans-serif ;
+  }
+}
+
+.logo{
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    background: url("../../layout/SMG-ICON-Logo.png") no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: 49px;
+    float: left;
+    margin: 8px -27px 0 0;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .logo::before {
+    margin: 8px -15px 0 0;
+  }
+
+  .logo .header-titel h1{
+    font-size: 18px;
+  }
+
+  .logo .header-titel p {
+    bottom: 56%;
+    left: 25%;
+  }
+}

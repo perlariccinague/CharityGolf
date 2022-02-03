@@ -1,0 +1,381 @@
+@import "variables";
+
+.ce_sliderStart {
+  position: relative;
+  width: 100%;
+}
+
+.finale-image1 {
+  position: relative;
+}
+
+.slider-wrapper {
+  img {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+  .date1 {
+    text-align: center;
+    font-size: 61px;
+    position: absolute;
+    bottom: 40%;
+    color: white;
+    left: 50%;
+    font-family: "Open Sans", sans sans-serif;
+    text-shadow: 0 0 10px black;
+    transform: translateX(-50%) translateY(-50%);
+    .titel {
+      font-size: 29px;
+    }
+  }
+  .date {
+    border-bottom: 1px solid white;
+    padding: 16px;
+    width: 50%;
+    margin: 0 auto;
+    font-style: italic;
+    strong{
+      font-style: normal;
+    }
+  }
+
+  .date a, .description > p a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+.slider-wrapper  .description, .description{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    bottom: -21px;
+    position: absolute;
+    height: 200px;
+    font-family: "Open Sans",sans sans-serif ;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+
+    strong{
+      text-transform: uppercase;
+    }
+  }
+
+.description > p {
+  margin: 18px 0;
+
+}
+
+.description {
+  bottom: 2px;
+}
+
+  .date:hover {
+    opacity: .6;
+    filter: contrast(2);
+}
+
+.finale-image1{
+  img{
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.slider-control, .turnier-weimar .slider-control{
+    position: absolute;
+    bottom: 100px;
+    transform: translateY(50%);
+    width: 100%;
+}
+
+.slider-control  .slider-prev {
+    left: 3%;
+    width: 45px;
+  }
+
+.slider-control  .slider-next {
+    right: 3%;
+    width: 45px;
+  }
+
+.slider-control .slider-menu {
+  display: none;
+}
+
+.turnier-weimar .slider-control  {
+  top: 50%;
+}
+
+.slider-control a{
+  transition: filter 250ms;
+  &:hover {
+    filter: brightness(0.65) sepia(1) saturate(350%);
+  }
+}
+
+
+.standort {
+  text-align: center;
+  margin: 78px auto;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  width: 65%;
+  .date2{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder ;
+    }
+}
+
+.karte-image{
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.karte-image-mobile{
+  display: none;
+}
+
+.karte{
+  margin: 70px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.karte p{
+  font-size: 19px;
+  line-height: 1.5em;
+  max-width: 1230px;
+  text-align: left;
+  display: inline-block;
+  margin: 20px 8%;
+  strong{
+    margin-right: 30px;
+  }
+}
+
+.galerie{
+  max-width: 1230px;
+  margin: 85px auto;
+  width: 100%;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+      width: 30%;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 1;
+      transition: .3s ease-in-out;
+    }
+  }
+}
+
+.finale-image{
+  position: relative;
+  img{
+    height: 75vh;
+    width: 100%;
+    object-fit: cover
+  }
+}
+.finale-description {
+  color: #fff;
+  background: rgba(0,0,0, 0.6);
+  margin: 0 auto;
+  max-width: 1230px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 6%;
+  padding: 15px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-family: "Open Sans",sans-serif;
+  left: 50%;
+  }
+  .titel1 {
+    border-bottom: 2px solid;
+
+  }
+
+.untertitel{
+  border-bottom: 2px solid;
+  margin-top: 6px;
+}
+
+.untertitel, .titel1-paragraph1 {
+  font-size: 30px;
+  strong{
+    text-transform: uppercase;
+  }
+}
+
+.location, .titel1-paragraph{
+  font-size: 18px;
+}
+.location{
+  bottom: -6px;
+  position: relative;
+  line-height: 1.8em;
+}
+
+.anmeldung{
+  background: $yellow;
+  width: 100%;
+  margin: 71px auto;
+  min-height: 635px;
+}
+
+.anmeldung-teaser{
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  h2{
+    text-transform: uppercase;
+    padding: 24px;
+  }
+}
+
+.box{
+  display: flex;
+  max-width: 1230px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+
+.box-box {
+  width: 23%;
+  background: white;
+  padding: 25px 3%;
+  margin: 28px 0;
+  max-width: 300px;
+  color: $yellow;
+  h2{
+    margin: 1px -27px;
+    padding: 11px;
+    font-size: 18px;
+  }
+  ul{
+    list-style: disc ;
+    font-size: 15px;
+  }
+  li{
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .date1 {
+    font-size: 20px;
+    .titel {
+      font-size: 13px;
+    }
+  }
+
+   .finale-image1 img{
+     height: 45vh;
+   }
+
+.slider-wrapper .description {
+  font-size: 20px;
+  height: 145px;
+}
+
+  .date {
+    font-size: 15px;
+  }
+
+  .ce_sliderStart {
+    .slider-prev, .slider-next {
+      width: 31px;
+      transform: translateY(100%);
+    }
+    .slider-prev{
+      left: 1%;
+    }
+    .slider-next{
+      right: 1%;
+    }
+  }
+
+  .description > p {
+    margin: 13px 0;
+  }
+
+  .standort p{
+    font-size: 21px;
+  }
+
+  .karte-image-mobile{
+    text-align: center;
+    width: 100%;
+    display: block;
+    img{
+      width: 250px;
+    }
+  }
+  .home .karte-image {
+    display: none;
+  }
+
+  .karte-image{
+    width: 90%;
+  }
+
+  .finale-description {
+    height: 220px;
+  }
+
+  .titel1-paragraph1, .untertitel {
+    font-size: 20px;
+  }
+
+  .titel1-paragraph, .location {
+    font-size: 12px;
+  }
+
+  .location {
+    line-height: 1.4em;
+  }
+
+  .description {
+    bottom: 0px;
+    height: 145px;
+    font-size: 20px;
+  }
+  .date, .desciption > p {
+    font-size: 18px;
+  }
+
+
+  .turnier-weimar .slider-control  {
+    top: 36%;
+  }
+
+  .anmeldung{
+    height: 1270px;
+  }
+
+  .box-box{
+    width: 100%;
+    padding: 25px 14%;
+  }
+
+}

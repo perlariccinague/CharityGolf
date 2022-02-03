@@ -1,0 +1,164 @@
+@import "variables";
+
+.formular{
+  background-color: #fff;
+  position: relative;
+  padding: 150px 30px;
+}
+
+.formular:before{
+  content: url('../../layout/golfball.svg');
+  position: absolute;
+  top: -107px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.formbody{
+  max-width: 1250px;
+  width: 100%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formbody .left {
+  margin-top: 10px;
+  width: 45%;
+  float: left;
+  margin-right: 10%;
+}
+
+.ce_form .explanation {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #5c6367;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ce_form hr {
+  border: 1px solid $yellow;
+  margin: 30px auto;
+}
+
+.formbody .widget-checkbox, .formbody .widget-radio {
+  margin-bottom:20px
+}
+
+.ce_form .formbody input[type="checkbox"], .ce_form .formbody input[type="radio"] {
+  display: none;
+}
+
+.ce_form label {
+  margin-right: 18px;
+  font-family: 'Open Sans',sans-serif;
+  color: #5c6367;
+}
+
+.ce_form .formbody input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #c99c00;
+}
+
+.formbody .widget-checkbox legend, .formbody .widget-radio legend {
+  padding-bottom: 10px;
+}
+
+.ce_form legend {
+  font: 1.2em 'Open Sans',sans-serif;
+  font-weight: normal;
+  color: #5c6367;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.formbody .left input[type="radio"] + label span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -2px 12px 0 0;
+  cursor: pointer;
+  border: 1px solid #c99c00;
+  border-radius: 10px;
+}
+
+.ce_form span.invisible {
+  display: none;
+}
+
+.formbody .left .widget-text, .formbody .right .widget-text {
+  font: 1.2em 'Open Sans',sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.formbody .widget-text.full label {
+  margin-top: 20px;
+  margin-bottom: 7px;
+  display: block;
+  clear: both;
+}
+
+.formbody .full input.text, .formbody .left input.text, .formbody .right input.text{
+  background: #eeeff0;
+  border: 0;
+  padding: 5px 3%;
+}
+
+.formbody .full input.text, .formbody .right input.text{
+  width: 99%;
+}
+
+.formbody .left select {
+  cursor: pointer;
+  border: 1px solid $yellow;
+  margin: 10px auto;
+}
+
+/*right-Formular*/
+.formbody .right {
+  width: 45%;
+  float: right;
+}
+
+.formbody .right .widget-text label {
+  margin-bottom: 7px;
+  display: block;
+}
+
+.ce_form a {
+  text-decoration: none;
+  color: #c99c00;
+}
+
+.ce_form .formbody .right .submit {
+  margin-top: 30px;
+  padding: 7px 20px;
+  background-color: $yellow;
+  font: 1.2em 'Open Sans',sans-serif;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0px;
+}
+
+#ctrl_262, #ctrl_194, #ctrl_323, #ctrl_201{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1025px){
+  .formbody {
+    margin-top: -120px;
+  }
+
+  .formbody .left, .formbody .right{
+    width: 100%;
+  }
+}

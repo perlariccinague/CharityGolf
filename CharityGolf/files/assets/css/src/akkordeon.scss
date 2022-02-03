@@ -1,0 +1,45 @@
+@import "variables";
+
+
+.ce_accordion {
+  margin: 200px auto;
+}
+
+.toggler {
+  background-image: url("../../content/layout/arrow-down1.svg");
+  background-repeat:no-repeat;
+  width: 80%;
+  transform: translateX(13%);
+  background-size: auto 70%;
+  margin-bottom: 50px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 10px 25px;
+  font: 2em 'Open Sans',sans-serif;
+  color: $yellow;
+  text-transform: uppercase;
+  text-align: center
+}
+
+.toggler.active {
+  background-image: url("../../layout/totop.svg");
+}
+
+@media screen and (max-width: 1025px){
+  .ce_accordion {
+    margin: 129px auto;
+  }
+
+  .toggler{
+    background-size: 10%;
+    font-size: 1.3em;
+    transform: translateX(-50%) translateY(50%);
+    margin: -150px auto;
+    position: absolute;
+    left: 50%;
+  }
+
+  .mod_article{
+    min-height: 1px;
+  }
+}
