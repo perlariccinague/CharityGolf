@@ -25,6 +25,14 @@
   background-image: url("../../layout/totop.svg");
 }
 
+.teaser-text {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 2em;
+  font-family: "Open Sans", sans-serif;
+}
+
 @media screen and (max-width: 1025px){
   .ce_accordion {
     margin: 129px auto;

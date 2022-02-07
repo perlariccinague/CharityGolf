@@ -90,6 +90,45 @@
   }
 }*/
 
+.map-elements {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.aachen a, .berlin a, .leipzig a, .weimar a{
+  position: absolute;
+  width: 95px;
+  transition: filter 250ms;
+}
+
+.aachen a {
+  left: 16px;
+  top: 266px;
+}
+
+.berlin a {
+  top: 150px;
+  right: 36px;
+}
+
+.leipzig a {
+  top: 218px;
+  right: 97px;
+  z-index: 200;
+}
+
+.weimar a {
+  top: 271px;
+  right: 150px;
+  z-index: 134;
+}
+
+
+.aachen a:hover, .berlin a:hover, .leipzig a:hover, .weimar a:hover {
+   filter: brightness(3.05) sepia(1) saturate(350%);
+}
+
 .finale-image1{
   img{
     height: 75vh;
@@ -340,7 +379,7 @@
       width: 250px;
     }
   }
-  .home .karte-image {
+  .home .map-elements {
     display: none;
   }
 
