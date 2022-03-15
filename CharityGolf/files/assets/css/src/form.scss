@@ -147,10 +147,18 @@
   text-transform: uppercase;
   cursor: pointer;
   border: 0px;
+  margin-bottom: 15px;
 }
 
 #ctrl_262, #ctrl_194, #ctrl_323, #ctrl_201{
   margin-top: 20px;
+}
+
+#lbl_381_0 {
+  font: 1.1em/1.3em "Open Sans",sans-serif;
+  font-weight: normal;
+  color: #5c6367;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1025px){

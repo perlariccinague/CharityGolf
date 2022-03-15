@@ -302,7 +302,7 @@
   background: $yellow;
   width: 100%;
   margin: 60px auto;
-  min-height: 610px;
+  min-height: 400px;
 }
 
 .anmeldung-teaser{
@@ -316,7 +316,7 @@
   }
 }
 
-.box, .box1{
+.box {
   display: flex;
   max-width: 1230px;
   justify-content: space-between;
@@ -327,18 +327,25 @@
   flex-wrap: wrap;
 }
 
-.box-box, .box-box1{
-  width: 23%;
-  background: white;
-  padding: 25px 3%;
-  margin: 28px 0;
+.box-box {
+  width: 16%;
+  background: #fff;
+  padding: 25px 24px;
+  margin: 0 auto;
   max-width: 300px;
-  color: $yellow;
-  height: 240px;
+  color: #c4960c;
+  transform: translateY(50%);
+  text-align: center;
   h2{
-    margin: 1px -27px;
-    padding: 11px;
+    text-align: center;
+    border-top: 1px solid $yellow;
     font-size: 18px;
+    text-align: center;
+    color: $yellow;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 20px 0;
+    margin: 22px 0 0 0
   }
   ul{
     list-style: disc ;
@@ -349,6 +356,10 @@
   }
 }
 
+.box-box img {
+  width: 50px;
+}
+
 .contain-image {
   margin: 22px auto;
   img {
@@ -357,7 +368,7 @@
   }
 }
 
-.box-box h2 a, .box-box1 h2 a {
+.box-box h2 a {
   color: $yellow;
   text-decoration: none;
   cursor: pointer;
@@ -366,7 +377,7 @@
   }
 }
 
-.box-box p,  .box-box1 p {
+/*.box-box p {
   margin-left: -17px;
 }
 
@@ -381,7 +392,7 @@
   }
 }
 
-/*.box-box > p > a > img, .box-box1 > p > a > img  {
+.box-box > p > a > img, .box-box1 > p > a > img  {
   width: 42px;
   margin-left: 161px;
   margin-top: 40px;
