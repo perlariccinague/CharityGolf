@@ -9,58 +9,63 @@
 
 <script>
     let part = false;
-    const check = document.getElementById('lbl_44_0');
-    const mandatory_fields = ['29','30','123','31','32','33','34','122'];
+    if(document.getElementById('lbl_44_0')) {
+        const check = document.getElementById('lbl_44_0');
+        const mandatory_fields = ['29','30','123','31','32','33','34','122'];
 
-    check.addEventListener("click", party);
+        check.addEventListener("click", party);
 
 
-    function party(){
-        if (part === false){
-            document.getElementsByClassName('second-participant')[0].style.display = "block";
-            mandatory_on();
-            part = true;
+        function party(){
+            if (part === false){
+                document.getElementsByClassName('second-participant')[0].style.display = "block";
+                mandatory_on();
+                part = true;
+            }
+            else {
+                document.getElementsByClassName('second-participant')[0].style.display = "none";
+                mandatory_off();
+                part = false;
+            }
         }
-        else {
-            document.getElementsByClassName('second-participant')[0].style.display = "none";
-            mandatory_off();
-            part = false;
+
+        function mandatory_on() {
+            for(let i = 0; i < mandatory_fields.length; i++){
+
+                document.getElementById('ctrl_'+mandatory_fields[i]).required = true;
+                document.getElementById('ctrl_'+mandatory_fields[i]).classList.add("mandatory");
+            }
+        }
+
+        function mandatory_off() {
+            for(let i = 0; i < mandatory_fields.length; i++){
+
+                document.getElementById('ctrl_'+mandatory_fields[i]).required = false;
+                document.getElementById('ctrl_'+mandatory_fields[i]).classList.remove("mandatory");
+            }
         }
     }
 
+    if(document.getElementById('impressionen-link')) {
+        const allImpressionsLinks = document.getElementById('impressionen-link').querySelectorAll('a');
 
-    function mandatory_on() {
-        for(let i = 0; i < mandatory_fields.length; i++){
-
-            document.getElementById('ctrl_'+mandatory_fields[i]).required = true;
-            document.getElementById('ctrl_'+mandatory_fields[i]).classList.add("mandatory");
-        }
+        allImpressionsLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('article-29').querySelector('.toggler').click();
+            })
+        });
     }
 
-    function mandatory_off() {
-        for(let i = 0; i < mandatory_fields.length; i++){
 
-            document.getElementById('ctrl_'+mandatory_fields[i]).required = false;
-            document.getElementById('ctrl_'+mandatory_fields[i]).classList.remove("mandatory");
-        }
+    if(document.getElementById('prizes-link')) {
+        const allPrizesLinks = document.getElementById('prizes-link').querySelectorAll('a');
+
+        allPrizesLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('article-30').querySelector('.toggler').click();
+            })
+        });
     }
-
-    const allImpressionsLinks = document.getElementById('impressionen-link').querySelectorAll('a');
-
-    allImpressionsLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            document.getElementById('article-29').querySelector('.toggler').click();
-        })
-    });
-
-
-    const allPrizesLinks = document.getElementById('prizes-link').querySelectorAll('a');
-
-    allPrizesLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            document.getElementById('article-30').querySelector('.toggler').click();
-        })
-    });
 
 
 
